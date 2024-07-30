@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://json.schemastore.org/cloudfoundry-application-manifest.json
+---
+applications:
+  - name: ((app-name))
+    buildpacks:
+      - go_buildpack
+    env:
+      GOVERSION: "1.22"
+    processes:
+      - type: web
+        health-check-interval: 15
+        readiness-health-check-type: http
+        readiness-health-check-http-endpoint: /
