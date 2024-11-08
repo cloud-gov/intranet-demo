@@ -1,9 +1,8 @@
-name: Security Considerations
+name: Security Considerations Workflow
 
 on:
   pull_request:
     types: [opened, edited, reopened]
-    branches: [main, master, develop]
 
 jobs:
   security-considerations:
