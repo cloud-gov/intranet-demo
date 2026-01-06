@@ -1,3 +1,3 @@
 module github.com/cloud-gov/cf-hello-worlds/go-hello
 
-go 1.22
+go 1.24
